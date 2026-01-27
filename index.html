@@ -49,7 +49,13 @@
 <script type="text/javascript">
   for(var i = 0; i < 10; i++) {
 document.getElementById('addToWishlistButton').addEventListener('click', function() {fbq('track', 'AddToWishlist'); }, false);
-document.getElementById('addToCartButton').addEventListener('click', function() {fbq('track', 'AddToCart');}, false);
+document.getElementById('addToCartButton').addEventListener('click', function() {fbq('track', 'AddToCart'{
+    value: '115',
+    currency: 'USD',
+    content_ids: ['123456'],
+    content_type: 'product',
+    source: 'marketingClient'
+  });}, false);
 document.getElementById('checkoutButton').addEventListener('click', function() {fbq('track', 'InitiateCheckout');}, false);
 document.getElementById('purchaseButton').addEventListener('click', function() {fbq('track', 'Purchase', {value: '12.34',currency: 'USD',});}, false);
 document.getElementById('subcribeButton').addEventListener('click', function() {fbq('track', 'Subscribe');}, false);
